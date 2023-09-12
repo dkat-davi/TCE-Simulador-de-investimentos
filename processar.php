@@ -59,9 +59,9 @@
 
     if (isset($_GET['aporteinicial']) && isset($_GET['aportemensal']) && isset($_GET['rendimento']) && isset($_GET['periodo'])) {
         $aporteInicial = floatval($_GET['aporteinicial']);
-        $periodo = intval($_GET['aportemensal']);
+        $aportemensal = intval($_GET['aportemensal']);
         $rendimentoMensal = floatval($_GET['rendimento']);
-        $aporteMensal = floatval($_GET['periodo']);
+        $periodo = floatval($_GET['periodo']);
     
         function calcularValores($valorAtual, $aporte, $rendimentoMensal)
         {
@@ -79,7 +79,7 @@
             if ($i == 1) {
                 $aporte = 0;
             } else {
-                $aporte = $aporteMensal;
+                $aporte = $aportemensal;
             }
     
             list($rendimento, $total) = calcularValores($valorAtual, $aporte, $rendimentoMensal);
