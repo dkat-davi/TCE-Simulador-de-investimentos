@@ -1,58 +1,37 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-
-
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Entrada de Dados</title>
+    <title>Simulador de Investimentos</title>
+    <link rel="stylesheet" href="styles/global.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
-
 <body>
-    <main>
+    <div class="container">
+        <header>
+            <h1><a href="#">Simulador de Investimentos</a></h1>
+            <nav>
+                <ul>
+                    <li><a href="entrada.html"><i class="fa-solid fa-sack-dollar"></i>&nbsp;Fazer Simulação</a></li>
+                    <li><a href="historico.php"><i class="fa-solid fa-file-lines"></i>&nbsp;Recuperar Simulação</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <ul>
+                <li>
+                    <h2><a href="./entrada.html"><i class="fa-solid fa-sack-dollar"></i>&nbsp;Fazer Simulação</a></h2>
+                </li>
+                <li>
+                <h2><a href="./historico.php"><i class="fa-solid fa-file-lines"></i>&nbsp;Recuperar Simulação</a></h2>
+                </li>
+            </ul>
+        </main>
 
-
-        <h1>Entrada de Dados</h1>
-
-
-        <form action="processar.php" method="GET">
-            <fieldset>
-                <legend>
-                 Dados do Investimento  
-                </legend>
-               <label for="cliente">Cliente</label>
-               <input type="text" name="cliente" id="cliente" ><br><br>
-
-
-               <label for="aporteinicial">Aporte Inicial</label>
-               <input type="number" name="aporteinicial" id="aporteinicial" ><br><br>
-
-
-               <label for="aportemensal">Aporte Mensal</label>
-               <input type="number" name="aportemensal" id="aportemensal"  ><br><br>
-
-
-               <label for="rendimento">Rendimento</label>
-               <input type="number" name="rendimento" id="rendimento" step="any"><br><br>
-
-
-               <label for="periodo">Periodo</label>
-               <input type="number" name="periodo" id="periodo" ><br><br>
-
-
-               <button type="submit">Simular</button>
-
-            </fieldset>
-        </form>
-
-
-    </main>
-    <footer>
-        <p>&copy;Copyright 2023 - João Braga e Davi Kalel</p>
-    </footer>
+        <footer>
+            <p>&copy;Copyright 2023 - <a href="https://github.com/jbragas618" target="_blank">João Braga</a> & <a href="https://github.com/dkat-davi" target="_blank">Davi Kalel</a></p>
+        </footer>
+    </div>
 </body>
-
-
 </html>

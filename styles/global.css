@@ -1,0 +1,114 @@
+:root {
+  font-size: 62.5%;
+  --background-color: rgb(15, 15, 15);
+  --primary-color: rgb(31, 37, 53);
+  --secondary-color: rgb(66, 78, 110);
+  --text-color: white;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-height: 100vh;
+  max-width: 100vw;
+  background-color: var(--background-color);
+  background-image: url('../assets/background.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+  width: 100%;
+  background-color: rgb(31, 37, 53);
+  color: white;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+}
+
+header nav ul li{
+  list-style: none;
+}
+
+header a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  width: 90%;
+}
+
+main ul {
+  background-color: rgb(31, 37, 53);
+  padding: 5rem;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  border-radius: 1rem;
+  color: white;
+}
+
+main ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  color: white;
+}
+
+main ul li a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+  color: var(--text-color);
+  background-color: rgb(31, 37, 53);
+  width: 100%;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}

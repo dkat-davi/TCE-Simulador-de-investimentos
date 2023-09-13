@@ -1,0 +1,36 @@
+main {
+    flex-direction: column;
+    color: white;
+}
+
+.wrapper{
+    background-color: rgb(31, 37, 53);
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+.wrapper input {
+    height: 3rem;
+    width: 100%;
+}
+
+.wrapper button {
+    height: 3rem;
+    width: 100%;
+    color: rgb(31, 37, 53);
+    font-weight: bold;
+    font-size: 2rem;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    transition: background .1s ease-in;
+}
+
+.wrapper button:hover {
+    background-color: rgb(60, 64, 103);
+    color: rgb(255, 255, 255);
+}
